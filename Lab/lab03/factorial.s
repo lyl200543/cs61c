@@ -22,3 +22,7 @@ main:
 
 factorial:
     # YOUR CODE HERE
+    addi t0, a0, -1
+    beq x0, t0, ra
+    mul a0, a0, t0
+    j factorial 
